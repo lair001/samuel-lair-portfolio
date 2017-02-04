@@ -16,7 +16,8 @@ ActiveRecord::Schema.define(version: 20170204211858) do
   enable_extension "plpgsql"
 
   create_table "mail_contacts", force: :cascade do |t|
-    t.string   "name"
+    t.string   "first_name"
+    t.string   "last_name"
     t.string   "email"
     t.string   "phone"
     t.text     "message"
