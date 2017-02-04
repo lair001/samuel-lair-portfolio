@@ -1,6 +1,7 @@
 class ApplicationRecord
-	module Whitespaceable
+	module Validatable
 		module ClassMethods
+
 
 
 		end
