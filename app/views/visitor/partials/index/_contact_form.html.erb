@@ -1,4 +1,14 @@
 <div class="jumbotron" id="contactfrmjmb">
+
+	<%= form_for mail_contact, html: { class: "contact-form" } %>
+
+		<div class="form-group">
+			<%= f.label :first_name %>
+			<%= f.text_field :first_name, class: "contact-form-input", placeholder: "First Name" %>
+		</div>
+
+	<% end %>
+
   <form id="contactform" action="mailto:lair001@gmail.com" method="post" enctype="text/plain" role="form">
 	<div class="form-group">
 		<label for="name">Name</label>
