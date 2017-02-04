@@ -18,7 +18,7 @@ ActiveRecord::Schema.define(version: 20170204211858) do
   create_table "mail_contacts", force: :cascade do |t|
     t.string   "first_name", default: "",    null: false
     t.string   "last_name",  default: "",    null: false
-    t.string   "email"
+    t.string   "email",      default: "",    null: false
     t.string   "phone",      default: "",    null: false
     t.text     "message",    default: "",    null: false
     t.boolean  "sent",       default: false, null: false
