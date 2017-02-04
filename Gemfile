@@ -35,9 +35,31 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+gem 'dotenv-rails'
+gem 'faraday'
+gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
+gem "font-awesome-rails", '~> 4.7'
+gem 'require_all'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem 'byebug', platform: :mri
+  # gem 'byebug', platform: :mri
+
+  gem 'pry-rails'
+  gem 'pry-byebug'
+
+  gem "rspec-rails"
+  gem "capybara", require: [ 'capybara/rspec', 'capybara/dsl' ]
+  gem "faker"
+  gem "factory_girl_rails"
+  gem 'to_factory'
+  gem "rack-test"
+  gem 'rack_session_access'
+  gem "database_cleaner"
+  gem 'rails-controller-testing'
+
+  gem "teaspoon"
+  gem "teaspoon-mocha"
 end
 
 group :development do
