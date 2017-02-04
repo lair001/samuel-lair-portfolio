@@ -3,5 +3,17 @@ class ApplicationRecord < ActiveRecord::Base
 
 	include Forbiddable::InstanceMethods
 	extend Whitespaceable::ClassMethods
-	extend Validatable::ClassMethods
+
+	def self.email_regex
+		/\A([^@]+@[^@]+\.[^.@\d]+|)\z/
+	end
+
+	def self.name_regex
+		/\A[\w'’]{,25}\z/
+	end
+
+	def self.phone_regex
+		/\A(\(\d{3}\)\d{3}-\d{4}|)\z/
+	end
+
 end
