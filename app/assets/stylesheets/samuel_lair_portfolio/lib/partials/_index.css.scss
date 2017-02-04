@@ -1,0 +1,225 @@
+@import url(https://fonts.googleapis.com/css?family=Orbitron);
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300);
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+body {
+
+}
+
+.cntrimg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.portfoliothmbn {
+    background-color: #436B95;
+    border-color: #436B95;
+}
+
+.portfolioimg {
+
+}
+
+.portfoliocptn {
+    background-color: #4169E1;
+}
+
+.shadow {
+  box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.2);
+}
+
+.socialbtn {
+  background-color: #436B95;
+  width: 75%;
+  margin-bottom: 30px;
+}
+
+#topnav {
+  background-color: #4169E1;
+  border-color: #4169E1;
+  color: #FFFFFF;
+}
+
+#topnav .navbar-nav > li > a {
+  color: #FFFFFF;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+#topnav .navbar-brand {
+  color: #FFFFFF;
+  font-family: 'Orbitron', sans-serif;
+}
+
+#topnav .navbar-toggle .icon-bar {
+  background-color: #FFFFFF;
+}
+
+#toptogglebtn,
+#toptogglebtn:active {
+  border-color: #4169E1;
+  background-color: #4169E1;
+}
+
+#topnavsearchsubmit,
+#topnavsreachsubmit:active {
+  background-color: #4169E1;
+  border-color: #4169E1;
+  color: #FFFFFF;
+}
+
+#MainBody {
+
+}
+
+#Home {
+  background: url(https://s5.postimg.org/ig53ca6af/home.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  color: #FFFFFF;
+  font-family: 'Orbitron', sans-serif;
+  text-align: center;
+  height: 100vh;
+  margin-bottom: 0px;
+}
+
+#title {
+  display: inline-block;
+  border-bottom: 1px solid #FFFFFF;
+  margin-top: 30vh;
+  margin-bottom: 0px;
+}
+
+#subtitle {
+  margin-top: 5px;
+}
+
+#About {
+  padding-top: 0px;
+  background: url(https://s5.postimg.org/d21pqzr6f/about.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  margin-bottom: 0px;
+  font-family: 'Open Sans', sans-serif;
+  color: #FFFFFF;
+  
+}
+
+#abouthdrjmb {
+  background-color: #436B95;
+  padding-bottom: 0px;
+  padding-top: 1px;
+  padding-left: 0px;
+  padding-right: 0px;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  text-align: center;
+}
+
+#abouthdr {
+  display: inline-block;
+  font-family: 'Orbitron', sans-serif;
+  border-bottom: 1px solid #FFFFFF;
+  margin-top: 0px;
+  margin-bottom: 5px
+}
+
+#profileimg {
+  margin-bottom: 30px;
+}
+
+#aboutblurbjumb {
+    background-color: #436B95;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 14pt;
+}
+
+#Portfolio {
+  padding-top: 0px;
+  background: url(https://s5.postimg.org/ysf520klz/portfolio.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  margin-bottom: 0px;
+  font-family: 'Open Sans', sans-serif;
+  color: #FFFFFF;
+}
+
+#portfoliohdrjmb {
+  background-color: #436B95;
+  padding-bottom: 0px;
+  padding-top: 1px;
+  padding-left: 0px;
+  padding-right: 0px;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  text-align: center;
+}
+
+#portfoliohdr {
+  display: inline-block;
+  font-family: 'Orbitron', sans-serif;
+  border-bottom: 1px solid #FFFFFF;
+  margin-top: 0px;
+  margin-bottom: 5px
+}
+
+#Contact {
+  padding-top: 0px;
+  background: url(https://s5.postimg.org/lll3oqziv/contact.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  margin-bottom: 0px;
+  font-family: 'Open Sans', sans-serif;
+  color: #FFFFFF;
+}
+
+#contacthdrjmb {
+  background-color: #436B95;
+  padding-bottom: 0px;
+  padding-top: 1px;
+  padding-left: 0px;
+  padding-right: 0px;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  text-align: center;
+}
+
+#contacthdr {
+  display: inline-block;
+  font-family: 'Orbitron', sans-serif;
+  border-bottom: 1px solid #FFFFFF;
+  margin-top: 0px;
+  margin-bottom: 5px
+}
+
+#contactfrmjmb {
+    background-color: #436B95;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#contactfrmbtn {
+  background-color: #4169E1;
+  border-color: #4169E1;
+  color: #FFFFFF;
+  width: 100%;
+}
