@@ -1,0 +1,2 @@
+class MailContact < ApplicationRecord
+end
