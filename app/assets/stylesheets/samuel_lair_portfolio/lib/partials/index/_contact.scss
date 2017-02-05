@@ -1,4 +1,4 @@
-#Contact {
+#index_contact {
   padding-top: 0px;
   background: url(https://s5.postimg.org/lll3oqziv/contact.jpg);
   background-repeat: no-repeat;
@@ -10,14 +10,14 @@
   color: #FFFFFF;
 }
 
-.contact-form {
+.index-contact-form {
   @include jumbotron($background-color: #436B95);
   @include center-block;
   width: 75%;
   text-align: center;
 }
 
-.contact-form-button {
+.index-contact-form-button {
   @include index-shadow;
   @include button-variant(#FFFFFF, #4169E1, #4169E1);
   width: 100%;
