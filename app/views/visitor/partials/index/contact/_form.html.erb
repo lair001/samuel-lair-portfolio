@@ -6,22 +6,22 @@
 
 	<div class="form-group">
 		<%= f.label :first_name %>
-		<%= f.text_field :first_name, class: "form-control index-contact-form-input", placeholder: "First Name (required)", required: true, maxlength: 25 %>
+		<%= f.text_field :first_name, class: "form-control index-contact-form-input", placeholder: "First Name (required)", required: true, maxlength: 127 %>
 	</div>
 
 	<div class="form-group">
 		<%= f.label :last_name %>
-		<%= f.text_field :last_name, class: "form-control index-contact-form-input", placeholder: "Last Name (required)", required: true, maxlength: 50 %>
+		<%= f.text_field :last_name, class: "form-control index-contact-form-input", placeholder: "Last Name (required)", required: true, maxlength: 127 %>
 	</div>
 
 	<div class="form-group">
 		<%= f.label :email %>
-		<%= f.email_field :email, class: "form-control index-contact-form-input", placeholder: "Email (required)", required: true, maxlength: 25 %>
+		<%= f.email_field :email, class: "form-control index-contact-form-input", placeholder: "Email (required)", required: true, maxlength: 254 %>
 	</div>
 
 	<div class="form-group">
 		<%= f.label :phone %>
-		<%= f.phone_field :phone, class: "form-control index-contact-form-input", placeholder: "Phone (optional - 10 digit US number)" %>
+		<%= f.phone_field :phone, class: "form-control index-contact-form-input", placeholder: "Phone (optional - 10 digit US number with area code)", minlength: 10, maxlength: 13 %>
 	</div>
 
 	<div class="form-group">

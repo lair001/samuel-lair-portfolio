@@ -9,7 +9,7 @@ class ApplicationRecord < ActiveRecord::Base
 	end
 
 	def self.name_regex
-		/\A[\w'’]{,25}\z/
+		/\A[\w'’]{,127}\z/
 	end
 
 	def self.phone_regex
