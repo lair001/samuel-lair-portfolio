@@ -1,7 +1,7 @@
 <%= form_for mail_contact, url: mail_contact_path, html: { class: "contact-form" } do |f| %>
 
 	<% if mail_contact.errors.any? %>
-		<%= render partial: 'visitor/partials/index/model_errors', locals: { model: mail_contact } %>
+		<%= render partial: 'visitor/partials/index/contact/model_errors', locals: { model: mail_contact } %>
 	<% end %>
 
 	<div class="form-group">
