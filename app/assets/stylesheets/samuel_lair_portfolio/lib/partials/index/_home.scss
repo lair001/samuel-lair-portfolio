@@ -15,4 +15,13 @@
 
 #index_subtitle {
   margin-top: 5px;
+  font-size: $index-subtitle-font-size / 1.7;
+}
+
+@media screen and (min-width: $screen-sm-min) {
+
+  #index_subtitle {
+    font-size: $index-subtitle-font-size;
+  }
+
 }
