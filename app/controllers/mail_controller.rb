@@ -5,7 +5,7 @@ class MailController < ApplicationController
 		if @mail_contact.save
 			redirect_to root_path
 		else
-			render 'visitor/index'
+
 		end
 	end
 
