@@ -1,12 +1,7 @@
 <%= render partial: 'visitor/partials/index/navbar' %>
 
-  <div class="jumbotron" id="Home">
-    <div class="container-fluid">
-      <h1 id="title">Samuel Lair</h1>
-      <h3 id="subtitle">Front End Web Developer</h2>
-      </div>
-    </div>
-  
+<%= render partial: 'visitor/partials/index/home' %>
+
 <%= render partial: 'visitor/partials/index/about' %>
 
     <div class="jumbotron" id="Portfolio">
@@ -152,5 +147,3 @@
     </div>
 
 <%= render partial: 'visitor/partials/index/contact', locals: { mail_contact: @mail_contact } %>
-
-    </div>
