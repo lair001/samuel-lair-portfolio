@@ -1,4 +1,4 @@
-<%= form_for mail_contact, url: mail_contact_path, html: { class: "index-contact-form" } do |f| %>
+<%= form_for mail_contact, url: mail_contacts_path, html: { class: "index-contact-form" } do |f| %>
 
 	<% if mail_contact.errors.any? %>
 		<%= render partial: 'visitor/partials/index/contact/model_errors', locals: { model: mail_contact } %>
