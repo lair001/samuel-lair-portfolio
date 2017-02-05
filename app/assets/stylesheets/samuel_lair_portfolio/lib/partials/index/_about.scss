@@ -1,21 +1,19 @@
 #index_about {
-  padding-top: 0px;
-  background: url(https://s5.postimg.org/d21pqzr6f/about.jpg);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-attachment: fixed;
-  background-size: cover;
-  margin-bottom: 0px;
-  font-family: 'Open Sans', sans-serif;
-  color: #FFFFFF;
+	padding-top: 0px;
+	background: url(https://s5.postimg.org/d21pqzr6f/about.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+	background-size: cover;
+	margin-bottom: 0px;
 }
 
 #index-profile-image {
-  margin-bottom: 30px;
+	margin-bottom: 30px;
 }
 
 #index-about-blurb {
-    background-color: #436B95;
+    background-color: $index-jumbotron-bg-color;
     width: 75%;
     margin-left: auto;
     margin-right: auto;
@@ -23,7 +21,7 @@
 }
 
 .index-social-button {
-  background-color: #436B95;
+  background-color: $index-jumbotron-bg-color;
   width: 75%;
   margin-bottom: 30px;
 }

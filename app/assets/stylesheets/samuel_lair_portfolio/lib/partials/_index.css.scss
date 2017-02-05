@@ -1,17 +1,19 @@
-@import url(https://fonts.googleapis.com/css?family=Orbitron);
+@import url($index-font-uri);
+@import url($index-header-font-uri);
+@import url($index-navbar-font-uri);
 
-@import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300);
 
-@import url(https://fonts.googleapis.com/css?family=Open+Sans);
 
 body {
-
+  font-family: $index-font-list;
+  font-size: $index-font-size;
+  color: $index-text-color;
 }
 
 .cntrimg {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .portfoliothmbn {

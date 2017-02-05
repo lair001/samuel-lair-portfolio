@@ -1,32 +1,33 @@
 #index_navbar {
-  background-color: #4169E1;
-  border-color: #4169E1;
-  color: #FFFFFF;
+  background-color: $index-navbar-bg-color;
+  border-color: $index-navbar-bg-color;
+  font-size: $index-navbar-font-size;
 }
 
 #index_navbar .navbar-nav > li > a {
-  color: #FFFFFF;
+  color: $index-text-color;
   font-family: 'Open Sans Condensed', sans-serif;
 }
 
 #index_navbar .navbar-brand {
-  color: #FFFFFF;
+  color: $index-text-color;
   font-family: 'Orbitron', sans-serif;
+  font-size: $index-navbar-brand-font-size;
 }
 
 #index_navbar .navbar-toggle .icon-bar {
-  background-color: #FFFFFF;
+  background-color: $index-text-color;
 }
 
 #index_navbar_toggle_button,
 #index_navbar_toggle_button:active {
-  border-color: #4169E1;
-  background-color: #4169E1;
+  border-color: $index-navbar-bg-color;
+  background-color: $index-navbar-bg-color;
 }
 
 #index_navbar_submit_search_button,
 #index_navbar_submit_search_button:active {
-  background-color: #4169E1;
-  border-color: #4169E1;
-  color: #FFFFFF;
+  background-color: $index-navbar-bg-color;
+  border-color: $index-navbar-bg-color;
+  color: $index-text-color;
 }
