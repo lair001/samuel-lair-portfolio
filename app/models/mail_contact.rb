@@ -3,7 +3,7 @@ class MailContact < ApplicationRecord
 	validates :last_name, { presence: true, length: { maximum: 25 }, format: { with: name_regex } }
 	validates :first_name, { presence: true, length: { maximum: 25 }, format: { with: name_regex } }
 	validates :email, { presence: true, length: { maximum: 50 }, format: { with: email_regex } }
-	validates :phone, { presence: true, format: { with: phone_regex } }
+	validates :phone, { format: { with: phone_regex } }
 	validates :message, { length: { in: 20..2047 } }
 
 	validate do
