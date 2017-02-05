@@ -6,17 +6,17 @@
 
 	<div class="form-group">
 		<%= f.label :first_name %>
-		<%= f.text_field :first_name, class: "form-control contact-form-input", placeholder: "First Name (required)" %>
+		<%= f.text_field :first_name, class: "form-control contact-form-input", placeholder: "First Name (required)", required: true, maxlength: 25 %>
 	</div>
 
 	<div class="form-group">
 		<%= f.label :last_name %>
-		<%= f.text_field :last_name, class: "form-control contact-form-input", placeholder: "Last Name (required)" %>
+		<%= f.text_field :last_name, class: "form-control contact-form-input", placeholder: "Last Name (required)", required: true, maxlength: 50 %>
 	</div>
 
 	<div class="form-group">
 		<%= f.label :email %>
-		<%= f.email_field :email, class: "form-control contact-form-input", placeholder: "Email (required)" %>
+		<%= f.email_field :email, class: "form-control contact-form-input", placeholder: "Email (required)", required: true, maxlength: 25 %>
 	</div>
 
 	<div class="form-group">
@@ -26,7 +26,7 @@
 
 	<div class="form-group">
 		<%= f.label :message %>
-		<%= f.text_area :message, class: "form-control contact-form-input", rows: 5, placeholder: "Message (required)" %>
+		<%= f.text_area :message, class: "form-control contact-form-input", rows: 5, placeholder: "Message (required)", required: true, minlength: 20, maxlength: 2047 %>
 	</div>
 
 	<%= f.button class: "btn contact-form-button" do %>
