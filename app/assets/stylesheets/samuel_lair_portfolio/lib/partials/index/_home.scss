@@ -1,6 +1,6 @@
 #index_home {
   @include index-section('https://s5.postimg.org/ig53ca6af/home.jpg');
-  font-family: 'Orbitron', sans-serif;
+  font-family: $index-header-font-list;
   text-align: center;
   height: 100vh;
   margin-bottom: 0px;
