@@ -9,11 +9,10 @@
 }
 
 #index-about-blurb {
-    background-color: $index-jumbotron-bg-color;
+	@include jumbotron($background-color: $index-jumbotron-bg-color);
+	@include center-block;
+	@include index-shadow;
     width: 75%;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 14pt;
 }
 
 .index-social-button {
