@@ -1,0 +1,17 @@
+.field_with_errors {
+	color: $index-error-text-color;
+	label {
+		background-color: $index-error-bg-color;
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+	input, input:focus, textarea, textarea:focus {
+		@include input-placeholder-styling($index-error-text-color);
+		color: $index-error-text-color;
+		border-color: $index-error-border-color;
+		background-color: $index-error-bg-color;
+	}
+	&+em, &+i {
+		color: $index-error-text-color;
+	}
+}
