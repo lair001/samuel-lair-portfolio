@@ -4,7 +4,7 @@
 
 
 @mixin jumbotron($background-color: $jumbotron-bg, $color: $jumbotron-color, $padding-top: $jumbotron-padding, $padding-bottom: $jumbotron-padding) {
-  padding-top:    $padding-top;
+  padding-top: $padding-top;
   padding-bottom: $padding-bottom;
   margin-bottom: $jumbotron-padding;
   color: $color;
