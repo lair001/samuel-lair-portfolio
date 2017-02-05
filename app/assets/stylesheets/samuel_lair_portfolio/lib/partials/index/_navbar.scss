@@ -1,31 +1,31 @@
-#topnav {
+#index_navbar {
   background-color: #4169E1;
   border-color: #4169E1;
   color: #FFFFFF;
 }
 
-#topnav .navbar-nav > li > a {
+#index_navbar .navbar-nav > li > a {
   color: #FFFFFF;
   font-family: 'Open Sans Condensed', sans-serif;
 }
 
-#topnav .navbar-brand {
+#index_navbar .navbar-brand {
   color: #FFFFFF;
   font-family: 'Orbitron', sans-serif;
 }
 
-#topnav .navbar-toggle .icon-bar {
+#index_navbar .navbar-toggle .icon-bar {
   background-color: #FFFFFF;
 }
 
-#toptogglebtn,
-#toptogglebtn:active {
+#index_navbar_toggle_button,
+#index_navbar_toggle_button:active {
   border-color: #4169E1;
   background-color: #4169E1;
 }
 
-#topnavsearchsubmit,
-#topnavsreachsubmit:active {
+#index_navbar_submit_search_button,
+#index_navbar_submit_search_button:active {
   background-color: #4169E1;
   border-color: #4169E1;
   color: #FFFFFF;
