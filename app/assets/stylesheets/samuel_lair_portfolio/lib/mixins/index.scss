@@ -1,3 +1,13 @@
 @mixin index-shadow {
 	box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.2);
 }
+
+@mixin index-section($bg-url) {
+	@include jumbotron($padding-top: 0px);
+	background: url($bg-url);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+	background-size: cover;
+	margin-bottom: 0px;
+}

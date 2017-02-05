@@ -1,9 +1,5 @@
 #index_home {
-  background: url(https://s5.postimg.org/ig53ca6af/home.jpg);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-attachment: fixed;
-  background-size: cover;
+  @include index-section('https://s5.postimg.org/ig53ca6af/home.jpg');
   font-family: 'Orbitron', sans-serif;
   text-align: center;
   height: 100vh;
@@ -13,7 +9,7 @@
 #index-title {
   display: inline-block;
   border-bottom: 1px solid #FFFFFF;
-  margin-top: 30vh;
+  margin-top: 45vh;
   margin-bottom: 0px;
 }
 

@@ -1,9 +1,3 @@
 #index_portfolio {
-	padding-top: 0px;
-	background: url(https://s5.postimg.org/ysf520klz/portfolio.jpg);
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-attachment: fixed;
-	background-size: cover;
-	margin-bottom: 0px;
+	@include index-section('https://s5.postimg.org/ysf520klz/portfolio.jpg')
 }
