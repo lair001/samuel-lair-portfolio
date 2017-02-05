@@ -3,11 +3,11 @@
 // --------------------------------------------------
 
 
-@mixin jumbotron($background-color: $jumbotron-bg, $text-color: $jumbotron-color) {
-  padding-top:    $jumbotron-padding;
-  padding-bottom: $jumbotron-padding;
+@mixin jumbotron($background-color: $jumbotron-bg, $color: $jumbotron-color, $padding-top: $jumbotron-padding, $padding-bottom: $jumbotron-padding) {
+  padding-top:    $padding-top;
+  padding-bottom: $padding-bottom;
   margin-bottom: $jumbotron-padding;
-  color: $text-color;
+  color: $color;
   background-color: $background-color;
 
   h1,
@@ -37,8 +37,8 @@
   }
 
   @media screen and (min-width: $screen-sm-min) {
-    padding-top:    ($jumbotron-padding * 1.6);
-    padding-bottom: ($jumbotron-padding * 1.6);
+    padding-top:    ($padding-top * 1.6);
+    padding-bottom: ($padding-bottom * 1.6);
 
     .container &,
     .container-fluid & {

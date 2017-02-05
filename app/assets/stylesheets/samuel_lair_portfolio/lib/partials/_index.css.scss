@@ -37,16 +37,12 @@ body {
 
 }
 
-#abouthdrjmb {
-  background-color: #436B95;
-  padding-bottom: 0px;
-  padding-top: 1px;
-  padding-left: 0px;
-  padding-right: 0px;
+.index-header-jumbotron {
+  @include jumbotron($background-color: $index-jumbotron-bg-color, $padding-top: 1px, $padding-bottom: 0px);
+  @include center-block;
+  @include index-shadow;
   width: 75%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 30px;
+  margin-top: $jumbotron-padding;
   text-align: center;
 }
 
@@ -58,40 +54,12 @@ body {
   margin-bottom: 5px
 }
 
-
-
-#portfoliohdrjmb {
-  background-color: #436B95;
-  padding-bottom: 0px;
-  padding-top: 1px;
-  padding-left: 0px;
-  padding-right: 0px;
-  width: 75%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 30px;
-  text-align: center;
-}
-
 #portfoliohdr {
   display: inline-block;
   font-family: 'Orbitron', sans-serif;
   border-bottom: 1px solid #FFFFFF;
   margin-top: 0px;
   margin-bottom: 5px
-}
-
-#contacthdrjmb {
-  background-color: #436B95;
-  padding-bottom: 0px;
-  padding-top: 1px;
-  padding-left: 0px;
-  padding-right: 0px;
-  width: 75%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 30px;
-  text-align: center;
 }
 
 #contacthdr {
