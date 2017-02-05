@@ -44,30 +44,15 @@ body {
   width: 75%;
   margin-top: $jumbotron-padding;
   text-align: center;
-}
-
-#abouthdr {
-  display: inline-block;
-  font-family: 'Orbitron', sans-serif;
-  border-bottom: 1px solid #FFFFFF;
-  margin-top: 0px;
-  margin-bottom: 5px
-}
-
-#portfoliohdr {
-  display: inline-block;
-  font-family: 'Orbitron', sans-serif;
-  border-bottom: 1px solid #FFFFFF;
-  margin-top: 0px;
-  margin-bottom: 5px
-}
-
-#contacthdr {
-  display: inline-block;
-  font-family: 'Orbitron', sans-serif;
-  border-bottom: 1px solid #FFFFFF;
-  margin-top: 0px;
-  margin-bottom: 5px
+  div {
+    display: inline-block;
+    font-family: $index-header-font-list;
+    font-size: $index-header-font-size;
+    border-bottom: 1px solid $index-text-color;
+    padding-bottom: 0px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
 }
 
 @import 'samuel_lair_portfolio/lib/partials/index/navbar.scss';
