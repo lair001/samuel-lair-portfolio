@@ -3,6 +3,8 @@
 }
 
 #index-profile-image {
+	@include center-block;
+	@include index-shadow;
 	margin-bottom: 30px;
 }
 
