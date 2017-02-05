@@ -19,7 +19,7 @@
 .index-model-errors {
 	@include jumbotron($color: $index-error-text-color, $background-color: $index-error-bg-color);
 	@include index-shadow;
-	border-color: $index-error-border-color;
+	border: 1px solid $index-error-border-color;
 	text-align: center;
 	font-size: $index-contact-form-label-font-size;
 }
