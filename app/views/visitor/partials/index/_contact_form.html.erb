@@ -1,32 +1,32 @@
-<div class="jumbotron" id="contactfrmjmb">
+<%= form_for mail_contact, url: mail_contact_path, html: { class: "contact-form" } do |f| %>
 
-	<%= form_for mail_contact, html: { class: "contact-form" } %>
+	<div class="form-group">
+		<%= f.label :first_name %>
+		<%= f.text_field :first_name, class: "form-control contact-form-input", placeholder: "First Name (required)" %>
+	</div>
 
-		<div class="form-group">
-			<%= f.label :first_name %>
-			<%= f.text_field :first_name, class: "contact-form-input", placeholder: "First Name" %>
-		</div>
+	<div class="form-group">
+		<%= f.label :last_name %>
+		<%= f.text_field :last_name, class: "form-control contact-form-input", placeholder: "Last Name (required)" %>
+	</div>
 
+	<div class="form-group">
+		<%= f.label :email %>
+		<%= f.email_field :email, class: "form-control contact-form-input", placeholder: "Email (required)" %>
+	</div>
+
+	<div class="form-group">
+		<%= f.label :phone %>
+		<%= f.phone_field :phone, class: "form-control contact-form-input", placeholder: "Phone (optional)" %>
+	</div>
+
+	<div class="form-group">
+		<%= f.label :message %>
+		<%= f.text_area :message, class: "form-control contact-form-input", rows: 5, placeholder: "Message (required)" %>
+	</div>
+
+	<%= f.button class: "btn contact-form-button" do %>
+		<%= raw("#{fa_icon('paper-plane')} Send") %>
 	<% end %>
 
-  <form id="contactform" action="mailto:lair001@gmail.com" method="post" enctype="text/plain" role="form">
-	<div class="form-group">
-		<label for="name">Name</label>
-		<input class="form-control" id="name" name="name" type="text" placeholder="Name">
-	</div>
-	<div class="form-group">
-		<label for="email">Email</label><br />
-		<input class="form-control" id="email" name="email" type="email" placeholder="Email">
-	</div>
-	<div class="form-group">
-		<label for="phone">Phone Number</label>
-		<input class="form-control" id="phone" name="phone" type="tel" placeholder="Phone Number">
-	</div>
-	<div class="form-group">
-		<label for="message">Message</label>
-		<textarea class="form-control" id="message" name="message" rows="5" placeholder="Message"></textarea>
-	</div>
-	<button type="submit" class="btn btn-primary shadow" id="contactfrmbtn"><i class="fa fa-paper-plane"></i>
- Send</button>
-  </form>
-</div>
+<% end %>

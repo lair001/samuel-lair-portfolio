@@ -8,6 +8,19 @@ body {
 
 }
 
+.contact-form {
+  @include jumbotron($background-color: #436B95);
+  @include center-block;
+  width: 75%;
+  text-align: center;
+}
+
+.contact-form-button {
+  @include index-shadow;
+  @include button-variant(#FFFFFF, #4169E1, #4169E1);
+  width: 100%;
+}
+
 .cntrimg {
     display: block;
     margin-left: auto;
@@ -208,18 +221,4 @@ body {
   border-bottom: 1px solid #FFFFFF;
   margin-top: 0px;
   margin-bottom: 5px
-}
-
-#contactfrmjmb {
-    background-color: #436B95;
-    width: 75%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-#contactfrmbtn {
-  background-color: #4169E1;
-  border-color: #4169E1;
-  color: #FFFFFF;
-  width: 100%;
 }
