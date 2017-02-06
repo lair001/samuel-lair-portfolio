@@ -15,12 +15,13 @@ module ConcernsHelper
 		end
 
 		def sign_in_user
-			reset_session_and_refresh_security_code
+			reset_session
 			session[:user_id] = @user.id
 			session[:security_code] = @user.security_code
 		end
 
 		def sign_out_user
+			@user = current_user
 			reset_session_and_refresh_security_code
 		end
 
