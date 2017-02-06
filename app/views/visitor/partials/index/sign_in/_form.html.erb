@@ -1,0 +1,21 @@
+<%= form_tag sessions_path, class: "index-sign-in-form" do %>
+
+	<% if flash[:error] %>
+		<%= render partial: 'visitor/partials/index/sign_in/flash_error' %>
+	<% end %>
+
+	<div class="form-group">
+		<%= label_tag :username %>
+		<%= text_field_tag :username, '', class: "form-control index-sign-in-form-input" %>
+	</div>
+
+	<div class="form-group">
+		<%= label_tag :password %>
+		<%= text_field_tag :password, '', class: "form-control index-sign-in-form-input" %>
+	</div>
+
+	<%= button_tag class: "btn index-contact-form-button" do %>
+		<%= raw("#{fa_icon('paper-plane')} Send") %>
+	<% end %>
+
+<% end %>

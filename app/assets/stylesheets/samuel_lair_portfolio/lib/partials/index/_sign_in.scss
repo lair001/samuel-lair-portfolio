@@ -1,0 +1,11 @@
+#index_sign_in {
+	@include index-section('https://s5.postimg.org/lll3oqziv/contact.jpg');
+}
+
+.index-sign-in-form {
+	@extend .index-contact-form;
+}
+
+.index-sign-in-form-button {
+	@extend .index-contact-form-button;
+}
