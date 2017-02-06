@@ -6,7 +6,16 @@
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
     </button>
-    <a class="navbar-brand" href="#">Samuel Lair</a>
+    <%=
+      navbar_brand_link_options = { class: "navbar-brand", data: {} }
+      if user_signed_in?
+        navbar_brand_link_path = session_path(current_user.id)
+        navbar_brand_link_options[:data][:method] = "delete"
+      else
+        navbar_brand_link_path = new_session_path
+      end
+      link_to "Samuel Lair", navbar_brand_link_path, navbar_brand_link_options
+    %>
     </div>
     <div class="collapse navbar-collapse" id="index_navbar_data_target">
       <ul class="nav navbar-nav">
