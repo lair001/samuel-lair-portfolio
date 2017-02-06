@@ -8,7 +8,9 @@
     </button>
     <%=
       navbar_brand_link_options = { class: "navbar-brand", data: {} }
-      if user_signed_in?
+      if current_page?(new_session_path)
+        navbar_brand_link_path = root_path
+      elsif user_signed_in?
         navbar_brand_link_path = session_path(current_user.id)
         navbar_brand_link_options[:data][:method] = "delete"
       else
