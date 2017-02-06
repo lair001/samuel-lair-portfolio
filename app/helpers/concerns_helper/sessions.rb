@@ -11,7 +11,7 @@ module ConcernsHelper
 
 		def reset_session_and_refresh_security_code
 			reset_session
-			@user.update #refresh security code
+			@user.save #refresh security code
 		end
 
 		def sign_in_user
