@@ -1,4 +1,4 @@
-class SessionsController < JsonController
+class SessionsController < ApplicationController
 
 	def new
 
