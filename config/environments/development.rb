@@ -29,7 +29,7 @@ Rails.application.configure do
   # Don't care if the mailer can't send.
   # config.action_mailer.raise_delivery_errors = false
 
-  config.action_mailer.perform_caching = true
+  config.action_mailer.perform_caching = false
 
   # need to test whether emails can be delivered
   config.active_job.queue_adapter = :sidekiq
