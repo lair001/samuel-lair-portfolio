@@ -9,10 +9,19 @@ module ConcernsHelper
 			!!current_user
 		end
 
-		def sign_in_user
+		def reset_session_and_refresh_security_code
 			reset_session
+			@user.update #refresh security code
+		end
+
+		def sign_in_user
+			reset_session_and_refresh_security_code
 			session[:user_id] = @user.id
 			session[:security_code] = @user.security_code
+		end
+
+		def sign_out_user
+			reset_session_and_refresh_security_code
 		end
 
 	end
