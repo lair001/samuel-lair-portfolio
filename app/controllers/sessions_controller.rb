@@ -16,6 +16,7 @@ class SessionsController < JsonController
 	end
 
 	def destroy
+		@user = current_user
 		sign_out_user
 		redirect_to root_path
 	end
