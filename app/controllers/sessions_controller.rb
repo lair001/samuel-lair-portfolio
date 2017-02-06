@@ -7,7 +7,7 @@ class SessionsController < JsonController
 	def create
 		@user = User.find_by(username: params[:username].strip)
 		if @user && !@user.banned? && @user.authenticate(params[:password].strip)
-			redirect_to sidekiq_web_path
+			@user.administrator? ? redirect_to(sidekiq_web_path) : redirect_to(root_path)
 		else
 			flash[:error] = "Your credentials are invalid."
 			render :new
